@@ -7,7 +7,6 @@ Group: Editors
 BuildRequires: ncurses-devel
 Url: http://merd.net/pixel/hexedit.html
 Source: http://merd.net/pixel/%{name}-%{version}.src.tar.bz2
-BuildRoot: %{_tmppath}/%{name}
 
 %description
 hexedit shows a file both in ASCII and in hexadecimal. The file can be a device

@@ -1,7 +1,7 @@
 Summary: View and edit files in hexadecimal or in ASCII
 Name: hexedit
 Version: 1.2.12
-Release: %mkrel 3
+Release: %mkrel 4
 License: GPL
 Group: Editors
 BuildRequires: ncurses-devel

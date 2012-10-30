@@ -1,13 +1,12 @@
-Summary: View and edit files in hexadecimal or in ASCII
-Name: hexedit
-Version: 1.2.12
-Release: %mkrel 9
-License: GPL
-Group: Editors
-BuildRequires: ncurses-devel
-Url: http://merd.net/pixel/hexedit.html
-Source: http://merd.net/pixel/%{name}-%{version}.src.tar.bz2
-BuildRoot: %{_tmppath}/%{name}
+Summary:	View and edit files in hexadecimal or in ASCII
+Name:		hexedit
+Version:	1.2.12
+Release:	10
+License:	GPLv2+
+Group:		Editors
+BuildRequires:	pkgconfig(ncursesw)
+Url:		http://merd.net/pixel/hexedit.html
+Source0:	http://merd.net/pixel/%{name}-%{version}.src.tar.bz2
 
 %description
 hexedit shows a file both in ASCII and in hexadecimal. The file can be a device
@@ -23,16 +22,9 @@ through it.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-, root, root)
-%doc COPYING TODO %{name}-%{version}.lsm
-%{_bindir}/*
-%{_mandir}/*/*
-
-
+%doc TODO %{name}-%{version}.lsm
+%{_bindir}/hexedit
+%{_mandir}/man1/hexedit.1*

@@ -23,7 +23,7 @@ through it.
 Summary:	View and edit files in hexadecimal or in ASCII (uClibc build)
 Group:		Editors
 
-%description
+%description -n	uclibc-%{name}
 hexedit shows a file both in ASCII and in hexadecimal. The file can be a device
 as the file is read a piece at a time. You can modify the file and search
 through it.

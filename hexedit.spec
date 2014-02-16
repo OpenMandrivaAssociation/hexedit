@@ -3,7 +3,7 @@
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
 Version:	1.2.13
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)
@@ -31,6 +31,8 @@ through it.
 %prep
 %setup -qn %{name}
 %apply_patches
+aclocal
+autoconf
 
 # too lazy to fix out of source build..
 %if %{with uclibc}

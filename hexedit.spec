@@ -41,6 +41,9 @@ cp -a * .uclibc
 %endif
 
 %build
+export CC=gcc
+export CXX=g++
+
 %if %{with uclibc}
 pushd .uclibc
 %uclibc_configure

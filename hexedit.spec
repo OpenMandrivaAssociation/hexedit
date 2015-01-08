@@ -31,8 +31,6 @@ through it.
 %prep
 %setup -qn %{name}
 %apply_patches
-aclocal
-autoconf
 
 # too lazy to fix out of source build..
 %if %{with uclibc}

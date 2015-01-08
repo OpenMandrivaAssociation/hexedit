@@ -50,7 +50,7 @@ popd
 %endif
 
 %configure
-%make
+%make LIBS='-lncurses'
 
 %install
 %if %{with uclibc}

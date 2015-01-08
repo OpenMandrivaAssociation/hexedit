@@ -45,12 +45,12 @@ export CXX=g++
 %if %{with uclibc}
 pushd .uclibc
 %uclibc_configure
-%make LIBS='-lncurses'
+%make LIBS='-lncursesw'
 popd
 %endif
 
 %configure
-%make LIBS='-lncurses'
+%make LIBS='-lncursesw'
 
 %install
 %if %{with uclibc}

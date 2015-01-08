@@ -45,7 +45,7 @@ export CXX=g++
 %if %{with uclibc}
 pushd .uclibc
 %uclibc_configure
-%make
+%make LIBS='-lncurses'
 popd
 %endif
 

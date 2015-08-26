@@ -1,9 +1,9 @@
-%bcond_without	uclibc
+%bcond_with	uclibc
 
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
 Version:	1.2.13
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)

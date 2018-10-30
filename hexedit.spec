@@ -1,7 +1,7 @@
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
 Version:	1.2.13
-Release:	12
+Release:	13
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)

@@ -1,12 +1,12 @@
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
-Version:	1.2.13
-Release:	13
+Version:	1.4.2
+Release:	1
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)
 Url:		http://rigaux.org/hexedit.html
-Source0:	http://rigaux.org/%{name}-%{version}.src.tgz
+Source0:	https://github.com/pixel/hexedit/archive/1.4.2/%{name}-%{version}.tar.gz
 Patch0:		hexedit-1.2.13-dont-strip-binary.patch
 
 %description

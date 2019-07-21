@@ -1,12 +1,12 @@
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
-Version:	1.2.13
-Release:	13
+Version:	1.4.2
+Release:	1
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)
 Url:		http://rigaux.org/hexedit.html
-Source0:	http://rigaux.org/%{name}-%{version}.src.tgz
+Source0:	https://github.com/pixel/hexedit/archive/%{version}.tar.gz
 Patch0:		hexedit-1.2.13-dont-strip-binary.patch
 
 %description
@@ -15,13 +15,10 @@ as the file is read a piece at a time. You can modify the file and search
 through it.
 
 %prep
-%setup -qn %{name}
-%apply_patches
+%setup -q
 
 %build
-export CC=gcc
-export CXX=g++
-
+./autogen.sh
 %configure
 %make LIBS='-lncursesw'
 
@@ -29,6 +26,6 @@ export CXX=g++
 %makeinstall
 
 %files
-%doc TODO %{name}-%{version}.lsm
+%doc TODO
 %{_bindir}/hexedit
 %{_mandir}/man1/hexedit.1*

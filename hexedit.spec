@@ -1,6 +1,6 @@
 Summary:	View and edit files in hexadecimal or in ASCII
 Name:		hexedit
-Version:	1.5
+Version:	1.6
 Release:	1
 License:	GPLv2+
 Group:		Editors

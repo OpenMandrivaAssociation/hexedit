@@ -5,7 +5,7 @@ Release:	2
 License:	GPLv2+
 Group:		Editors
 BuildRequires:	pkgconfig(ncursesw)
-Url:		http://rigaux.org/hexedit.html
+Url:		https://rigaux.org/hexedit.html
 Source0:	https://github.com/pixel/hexedit/archive/%{version}.tar.gz
 Patch0:		hexedit-1.2.13-dont-strip-binary.patch
 

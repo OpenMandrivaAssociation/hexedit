@@ -4,6 +4,11 @@ Version:	1.6
 Release:	2
 License:	GPLv2+
 Group:		Editors
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncursesw)
 Url:		https://rigaux.org/hexedit.html
 Source0:	https://github.com/pixel/hexedit/archive/%{version}.tar.gz
